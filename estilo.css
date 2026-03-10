@@ -215,8 +215,8 @@ descricao_produto {
 }
 
 .preview-section {
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 240px;
+  max-height: 300px;
   padding: 10px;
   border-right-style: solid;
   border-right-color: rgba(46, 36, 24, 0.5);
@@ -235,7 +235,7 @@ descricao_produto {
   display: flex;
   overflow-x: auto;
   gap: 0; /* Removido o gap para o snap ser exato */
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   border-left: #2E2418;
   
   /* MÁGICA DO SNAP: Faz o scroll grudar nas páginas */

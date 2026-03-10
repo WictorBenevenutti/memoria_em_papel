@@ -19,6 +19,7 @@
 
         <main class="corpo_catalogo">
             <div id="album_animais"></div>
+            <div id="album_animais2"></div>
         </main>
 
         <footer class="rodape_catalogo">
@@ -34,12 +35,10 @@
             .then(data => {
             document.getElementById('album_animais').innerHTML = data;
             });
-    </script>
-    <script>
-        fetch('produtos/album_fazendinha.html')
+                fetch('produtos/album_animais.html')
             .then(res => res.text())
             .then(data => {
-            document.getElementById('album_fazendinha').innerHTML = data;
+            document.getElementById('album_animais2').innerHTML = data;
             });
     </script>
     <script>
