@@ -69,21 +69,29 @@
 .rodape_catalogo {
   background-color: #2E2418;
   color: #F8ECD2;
-  padding: 50px 20px;
+  padding: 10px 20px;
   text-align: center;
   border-top: 1px solid rgba(46, 36, 24, 0.3);
 }
 
 .link_rodape {
-  margin: 0;
-  font-size: 1em;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-family: 'Cinzel', serif;
+  margin: 5px;
+  font-size: 1.3em;
+  font-family: 'pacifico', serif;
+}
+
+.link_rodape > img {
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.link_rodape > a {
+  color: #F8ECD2;
 }
 
 .creditos_rodape {
-  margin: 15px 0 0;
+  margin: 15px 0px 15px  0px;
   font-size: 0.8em;
   opacity: 0.7;
   letter-spacing: 1px;

@@ -6,8 +6,33 @@
 
 /* Ajustes específicos para celulares */
 @media (max-width: 576px) {
-  .cabecalho_catalogo { padding: 40px 15px; }
-  
+
+/* --- CABECALHO --- */
+  .cabecalho_catalogo {
+    padding: 10px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo-img {
+    width: 50%;
+  }
+
+  .titulo_subtitulo_cabecalho {
+    border-left-style: none;
+  }
+
+  .titulo_cabecalho {
+    font-size: 1.3em;
+    padding: 5px;
+  }
+
+  .subtitulo_cabecalho {
+    font-size: 0.9em;
+    padding: 5px;
+  }
+
+/* --- PRODUTOS --- */  
   .cartao_produto {
     flex-direction: column; /* Empilha a foto sobre as informações */
     min-height: auto;
@@ -36,4 +61,18 @@
     padding: 15px 10px; /* Ajuste no preenchimento do botão */
     box-sizing: border-box;
   }
+
+/* --- RODAPE --- */  
+.rodape_catalogo {
+
+}
+
+.link_rodape {
+
+}
+
+.creditos_rodape {
+
+}
+
 }
