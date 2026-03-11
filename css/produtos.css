@@ -10,7 +10,8 @@
   box-shadow: 5px 5px 15px rgba(0,0,0,0.02);
   margin: 0 0 10px 0;
   border-left: 5px solid #5cc8ff;
-  padding-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* --- PREVISUALIZACAO --- */
