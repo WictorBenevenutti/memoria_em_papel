@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catálogo Memória em Papel</title>
   <link rel="shortcut icon" href="assets/marca/Logotipo.png" type="image/x-icon">
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/conteudo.css">
+  <link rel="stylesheet" href="css/produtos.css">
+  <link rel="stylesheet" href="css/responsividade.css">
 </head>
 <body>
-    <div class="container_principal">
+    <div class="conteudo">
 
         <header class="cabecalho_catalogo">
             <img src="assets/marca/Logotipo.png" alt="Logotipo Memória em Papel" class="logo-img">
@@ -20,7 +23,6 @@
 
         <main class="corpo_catalogo">
             <div id="album_animais"></div>
-            <div id="album_animais2"></div>
         </main>
 
         <footer class="rodape_catalogo">
@@ -35,11 +37,6 @@
             .then(res => res.text())
             .then(data => {
             document.getElementById('album_animais').innerHTML = data;
-            });
-                fetch('produtos/album_animais.html')
-            .then(res => res.text())
-            .then(data => {
-            document.getElementById('album_animais2').innerHTML = data;
             });
     </script>
     <script>

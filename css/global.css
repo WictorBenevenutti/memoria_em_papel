@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 { 
+  margin: 0; 
+  font-weight: 400; 
+}
+
+p { 
+  margin: 0; 
+  font-weight: 300; 
+  line-height: 1.6; 
+}
+
+a { 
+  text-decoration: none; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}

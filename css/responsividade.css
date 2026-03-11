@@ -1,0 +1,39 @@
+/* Ajustes para tablets e celulares grandes */
+@media (max-width: 768px) {
+  .cartao-informacao { padding: 30px; }
+  .conteudo { margin: 20px auto; width: 95%; }
+}
+
+/* Ajustes específicos para celulares */
+@media (max-width: 576px) {
+  .cabecalho_catalogo { padding: 40px 15px; }
+  
+  .cartao_produto {
+    flex-direction: column; /* Empilha a foto sobre as informações */
+    min-height: auto;
+  }
+
+  .previsualizacao_container {
+    border-right: none;
+    border-bottom: 1px solid rgba(46, 36, 24, 0.1);
+    padding: 40px 20px; /* Mais preenchimento na foto empilhada */
+  }
+
+  .cartao-informacao {
+    padding: 30px 20px; /* Menor preenchimento lateral nas informações */
+  }
+
+  .nome_produto { font-size: 1.5em; }
+  .preco_produto { font-size: 1.4em; }
+
+  .botao_selecao {
+    flex-direction: column; /* Empilha os botões */
+    gap: 10px;
+  }
+
+  .btn_classico, .btn_premium {
+    width: 100%; /* Botões ocupam a largura total */
+    padding: 15px 10px; /* Ajuste no preenchimento do botão */
+    box-sizing: border-box;
+  }
+}
