@@ -48,16 +48,18 @@
     padding: 5px 5px 10px 5px; /* Menor preenchimento lateral nas informações */
   }
 
-  .nome_produto { font-size: 1.5em; }
-  .preco_produto { font-size: 1.4em; }
+  .nome_produto { font-size: 1.3em; }
+  .descricao_produto { font-size: 0.9em; }
+  .preco_produto { font-size: 1.2em; }
 
   .botao_selecao {
     flex-direction: column; /* Empilha os botões */
+    align-items: center;
     gap: 10px;
   }
 
   .bloco_botao {
-    width: auto;
+    width: 70%;
   }
 
   .btn_classico, .btn_premium {
