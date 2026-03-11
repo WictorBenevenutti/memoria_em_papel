@@ -23,6 +23,7 @@
 
         <main class="corpo_catalogo">
             <div id="album_animais"></div>
+            <div id="album_animais2"></div>
         </main>
 
         <footer class="rodape_catalogo">
@@ -38,6 +39,11 @@
             .then(data => {
             document.getElementById('album_animais').innerHTML = data;
             });
+        fetch('produtos/album_animais.html')
+            .then(res => res.text())
+            .then(data => {
+            document.getElementById('album_animais2').innerHTML = data;
+         });
     </script>
     <script>
         // 1. OUVINTE GLOBAL DE CLIQUES
@@ -45,21 +51,21 @@
         document.addEventListener('click', function(event) {
             
             // Verifica se o clique foi em uma seta (ou dentro dela)
-            const seta = event.target.closest('.scroll-arrow');
+            const seta = event.target.closest('.flecha');
             if (!seta) return; // Se não foi seta, ignora.
 
             // 2. ENCONTRAR O CARROSSEL CORRETO
             // A partir da seta, subimos até o container pai e descemos até o scroll.
-            const carouselContainer = seta.closest('.carousel-container');
+            const carouselContainer = seta.closest('.carrossel-container');
             if (!carouselContainer) return;
 
-            const scrollContainer = carouselContainer.querySelector('.preview-scroll');
+            const scrollContainer = carouselContainer.querySelector('.previsualizacao-scroll');
             if (!scrollContainer) return;
 
             // 3. EXECUTAR A ROLAGEM
             
             // Descobre a direção: Direita (1), Esquerda (-1)
-            const direcao = seta.classList.contains('arrow-right') ? 1 : -1;
+            const direcao = seta.classList.contains('flecha_direita') ? 1 : -1;
             
             // Descobre a largura de uma página (clientWidth pega a largura visível)
             const larguraPagina = scrollContainer.firstElementChild.clientWidth;

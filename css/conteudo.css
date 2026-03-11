@@ -14,7 +14,7 @@
 /* --- CABECALHO --- */
 .cabecalho_catalogo {
   text-align: center;
-  padding: 20px 10px 10px 10px;
+  padding: 20px 10px;
   display: flex;
   height: 150px;
   align-items: center;

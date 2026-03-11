@@ -1,27 +1,28 @@
 /* --- CARTAO DE PRODUTO --- */
 .cartao_produto {
   display: flex;
+  align-items: center;
   background: #FFF;
   border: 1px solid #5cc8ff;
   border-radius: 20px;
   overflow: hidden;
-  height: 250px;
+  height: auto;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.02);
   margin: 0 0 10px 0;
   border-left: 5px solid #5cc8ff;
+  padding-left: 5px;
 }
 
 /* --- PREVISUALIZACAO --- */
 .previsualizacao_container {
   width: 178px;
   height: 250px;
-  
   border-right-style: solid;
   border-right-color: rgba(46, 36, 24, 0.5);
   border-right-width: thin;
 }
 
-.carossel-container {
+.carrossel-container {
   position: relative;
   display: flex;
   align-items: center;
@@ -71,7 +72,7 @@
   transform: translateY(-50%);
   font-size: 24px;
   color: rgba(0, 0, 0, 0.7);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
   z-index: 10;
   transition: opacity 0.3s;
@@ -81,7 +82,7 @@
 .flecha_esquerda { left: 5px; }
 .flecha_direita { right: 5px; }
 
-.carossel-container:hover .flecha {
+.carrossel-container:hover .flecha {
   opacity: 0.8;
 }
 
@@ -98,7 +99,7 @@
   font-size: 1.8em;
   color: #2E2418;
   letter-spacing: 1px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .descricao_produto {
@@ -107,21 +108,33 @@
 }
 
 /* --- BOTÕES --- */
-.preco_produto {
-  font-size: 1.6em;
-  font-family: 'Georgia', serif;
-}
-
 .botao_selecao {
   display: flex;
   gap: 15px;
-  margin: 30px;
+  margin: 10px 10px 0px 10px;
+  justify-content: center;
+}
+
+.bloco_botao {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.preco_produto {
+  font-size: 1em;
+  font-family: 'Georgia', serif;
+  padding: 5px;
 }
 
 .btn_classico {
-  flex: 1;
-  display: inline-block;
-  padding: 14px 10px;
+  padding: 10px;
+  margin: 5px 20px;
   background-color: #8A7D71;
   color: white;
   font-size: 0.65em;
@@ -137,12 +150,18 @@
   background-color: #4a3f35;
 }
 
+.diferencial {
+  background-image: linear-gradient(to right, #dfbd69, #926f34);
+  color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 .btn_premium {
-  flex: 1.3;
-  display: inline-block;
-  padding: 14px 10px;
-  background-color: #F5D1A1;
-  color: #2E2418;
+  padding: 10px;
+  margin: 5px 20px;
+  background-image: linear-gradient(to right, #dfbd69, #926f34);
+  color: black;
   font-size: 0.65em;
   letter-spacing: 2px;
   font-weight: 600;

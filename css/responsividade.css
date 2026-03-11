@@ -35,17 +35,17 @@
 /* --- PRODUTOS --- */  
   .cartao_produto {
     flex-direction: column; /* Empilha a foto sobre as informações */
-    min-height: auto;
+    height: auto;
   }
 
   .previsualizacao_container {
     border-right: none;
     border-bottom: 1px solid rgba(46, 36, 24, 0.1);
-    padding: 40px 20px; /* Mais preenchimento na foto empilhada */
+    padding: 10px 5px 5px 5px; /* Mais preenchimento na foto empilhada */
   }
 
   .cartao-informacao {
-    padding: 30px 20px; /* Menor preenchimento lateral nas informações */
+    padding: 5px 5px 10px 5px; /* Menor preenchimento lateral nas informações */
   }
 
   .nome_produto { font-size: 1.5em; }
@@ -56,9 +56,11 @@
     gap: 10px;
   }
 
+  .bloco_botao {
+    width: auto;
+  }
+
   .btn_classico, .btn_premium {
-    width: 100%; /* Botões ocupam a largura total */
-    padding: 15px 10px; /* Ajuste no preenchimento do botão */
     box-sizing: border-box;
   }
 
