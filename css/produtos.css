@@ -101,6 +101,22 @@
   color: #2E2418;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.caracteristicas_produto {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.caracteristicas_produto li {
+  background-color: rgb(242, 242, 242);
+  padding: 5px 10px;
+  font-family:'Source Code Pro';
+  border-radius: 20px;
 }
 
 .descricao_produto {
